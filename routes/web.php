@@ -22,7 +22,11 @@ Route::get('/characters', function () {
 })->name("characters.index");
 
 Route::get('/comics', function () {
-    return view("comics.index");
+    $dati_comics = config("db_comics");
+
+    return view("comics.index", [
+        "lista_comics" => $dati_comics
+    ]);
 })->name("comics.index");
 
 Route::get('/movies', function () {

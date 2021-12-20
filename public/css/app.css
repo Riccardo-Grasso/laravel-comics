@@ -1,0 +1,138 @@
+.upper-nav {
+  background-color: #3c7bf8;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15%;
+  padding-right: 15%;
+  height: 120px;
+}
+
+header .navbar-logo {
+  height: 80px;
+  width: 80px;
+}
+
+header .navbar-logo img {
+  height: 100%;
+}
+
+header .navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header .navbar ul li.navbar-item {
+  position: relative;
+  /* &.blue-text {
+
+    .page-container {
+      background-color: $dc-blue;
+      height: 5px;
+      width: 100%;
+      position: absolute;
+      bottom: -41px;
+    }
+    a{
+      color: $dc-blue;
+    }
+  }
+  &.dark-text {
+    a {
+      color:$dc-dark-grey
+    }
+  } */
+}
+
+header .navbar ul li.navbar-item a {
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px 15px;
+  color: #212121 !important;
+}
+
+main {
+  background-color: #212121;
+}
+
+main .jumbotron {
+  height: 400px;
+  overflow: hidden;
+}
+
+main .jumbotron img {
+  width: 100%;
+}
+
+main .comics-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 50px 15%;
+}
+
+main .comics-container .current-series {
+  width: 250px;
+  height: 40px;
+  background-color: #3c7bf8;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+  transform: translate(0, -50%);
+  left: 14%;
+}
+
+main .comics-container .comic-container {
+  flex-basis: calc(16.6666666667% - 20px);
+}
+
+main .comics-container .comic-container .img-container {
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+main .comics-container .comic-container .img-container img {
+  width: 100%;
+}
+
+main .comics-container .comic-container .img-container:hover {
+  transform: translate(0, -20px);
+}
+
+main .comics-container .comic-container .comic-title {
+  color: white;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+main .row {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+main .row .load-more {
+  width: 150px;
+  height: 30px;
+  background-color: #3c7bf8;
+  line-height: 30px;
+  text-align: center;
+}
+
+main .row .load-more a {
+  text-decoration: none;
+  color: white;
+  color: white;
+  padding: 10px 20px;
+}
+

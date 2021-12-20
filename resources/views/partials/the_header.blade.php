@@ -44,19 +44,28 @@
 @endphp
 
 
-
+<div class="upper-nav">
+  <div class="container">
+     <div>DC POWER VISA</div>
+   <div>DC SITES</div>
+  </div>
+  
+</div>
 <header>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  
+  
+  <nav class="navbar ">
     <div class="container-fluid">
-
-      {{-- <a class="navbar-brand" href="#">Navbar</a> --}}
-
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-          @foreach ($navbar_links as $item)
-             <li class="nav-item">
-               <a class="nav-link" href="{{route($item["route_name"])}}">{{ $item["link"]}}</a>
-               </li> 
-          @endforeach
+    <div class="navbar-logo">
+      <img src= {{asset("img/dc-logo.png")}} alt="DC_Logo" />
+    </div>
+        {{-- <a class="navbar-brand" href="#">Navbar</a> --}}
+      <ul class="mx-auto mb-2 mb-lg-0">
+        @foreach ($navbar_links as $item)
+          <li class="navbar-item">
+            <a class="nav-link" href="{{route($item["route_name"])}}">{{ $item["link"]}}</a>
+          </li> 
+        @endforeach
       </ul> 
     </div>
   </nav>
