@@ -46,18 +46,20 @@
 
 <div class="upper-nav">
   <div class="container">
-     <div>DC POWER VISA</div>
-   <div>DC SITES</div>
+    <div class="elements d-flex justify-content-end">
+      <div class="element px-3 py-1 fw-bold">DC POWER VISA</div>
+      <div class="element px-3 py-1 fw-bold">ADDITIONAL DC SITES</div> 
+    </div>
   </div>
-  
 </div>
+
 <header>
-  
-  
   <nav class="navbar ">
     <div class="container-fluid">
     <div class="navbar-logo">
-      <img src= {{asset("img/dc-logo.png")}} alt="DC_Logo" />
+      <a class="" href="{{route("home.index")}}">
+        <img src= {{asset("img/dc-logo.png")}} alt="DC_Logo" />
+      </a>
     </div>
         {{-- <a class="navbar-brand" href="#">Navbar</a> --}}
       <ul class="mx-auto mb-2 mb-lg-0">
