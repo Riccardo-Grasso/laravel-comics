@@ -21,6 +21,12 @@ Route::get('/characters', function () {
     return view("characters.index");
 })->name("characters.index");
 
+
+
+
+
+
+
 Route::get('/comics', function () {
     $dati_comics = config("db_comics");
 
@@ -28,6 +34,27 @@ Route::get('/comics', function () {
         "lista_comics" => $dati_comics
     ]);
 })->name("comics.index");
+
+
+Route::get('/comics/{id?}', function ($id) {
+    $data = config("db_comics");
+    $comic = $data[$id];
+
+
+    return view("comics.details", [
+        "comic" => $comic
+    ]);
+})->name("comics.details");
+
+
+
+
+
+
+
+
+
+
 
 Route::get('/movies', function () {
     return view("movies.index");

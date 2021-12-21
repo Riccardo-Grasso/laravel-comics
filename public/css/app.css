@@ -59,6 +59,10 @@ header .navbar ul li.navbar-item a {
   color: #212121 !important;
 }
 
+header .navbar ul li.navbar-item a.active {
+  background-color: #4f8aff;
+}
+
 main {
   background-color: #212121;
 }

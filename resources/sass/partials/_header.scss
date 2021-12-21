@@ -38,7 +38,12 @@ header {
                 display: inline-block;
                 padding: $padding-y $padding-x;
                 color: $dc-dark-grey !important;
+
+                &.active {
+                  background-color: #4f8aff;
+                }
               } 
+
               /* &.blue-text {
 
                 .page-container {

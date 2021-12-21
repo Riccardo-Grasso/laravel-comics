@@ -16,9 +16,13 @@
                 </div> --}}
                 <div class="col mb-4">
                     <div class="comic-container">
-                        <div class="img-container">
-                            <img src="{{ $comic["thumb"]}}" alt="product-image" />
-                        </div>
+                        <a href="{{ route("comics.details")}}">
+                            <div class="img-container">
+                                
+                                <img src="{{ $comic["thumb"]}}" alt="product-image" />
+                            
+                            </div>
+                        </a>
                         <h6 class="comic-title">{{ $comic["title"]}}</h6>
                     </div>
                 </div>

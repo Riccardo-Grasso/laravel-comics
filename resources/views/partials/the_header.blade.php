@@ -40,7 +40,10 @@
         "link" => "SHOP",
         "route_name" => "shop.index"
 ],
-    ]
+];
+
+$route_name = Request::route()->getName();
+
 @endphp
 
 
@@ -65,7 +68,7 @@
       <ul class="mx-auto mb-2 mb-lg-0">
         @foreach ($navbar_links as $item)
           <li class="navbar-item">
-            <a class="nav-link" href="{{route($item["route_name"])}}">{{ $item["link"]}}</a>
+            <a class="nav-link {{$route_name === $item['route_name'] ? 'active' : ''}}"  href="{{route($item["route_name"])}}">{{ $item["link"]}}</a>
           </li> 
         @endforeach
       </ul> 
