@@ -16,10 +16,10 @@
                 </div> --}}
                 <div class="col mb-4">
                     <div class="comic-container">
-                        <a href="{{ route("comics.details")}}">
+                        <a href="{{ route('comics.details', ["id" => $loop->index])}}">
                             <div class="img-container">
-                                
-                                <img src="{{ $comic["thumb"]}}" alt="product-image" />
+                                 
+                                <img src="{{ $comic["thumb"]}}" alt="comic-image" />
                             
                             </div>
                         </a>

@@ -1,6 +1,6 @@
 @extends('layouts.layout_default')
 
-@section('page-title', 'DC Comics - Details')
+@section('page-title', 'DC Comics - ' . $comic["title"])
 
 @section('content')
     <div class="container">

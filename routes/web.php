@@ -22,11 +22,6 @@ Route::get('/characters', function () {
 })->name("characters.index");
 
 
-
-
-
-
-
 Route::get('/comics', function () {
     $dati_comics = config("db_comics");
 
@@ -38,22 +33,16 @@ Route::get('/comics', function () {
 
 Route::get('/comics/{id?}', function ($id) {
     $data = config("db_comics");
-    $comic = $data[$id];
 
-
-    return view("comics.details", [
-        "comic" => $comic
-    ]);
+    if (is_numeric($id) && $id >= 0 && $id < count($data)) {
+        $comic = $data[$id];
+        return view("comics.details", [
+            "comic" => $comic
+        ]);
+    } else {
+        abort("404");
+    }
 })->name("comics.details");
-
-
-
-
-
-
-
-
-
 
 
 Route::get('/movies', function () {
