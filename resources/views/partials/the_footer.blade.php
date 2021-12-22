@@ -38,16 +38,16 @@
 
 
 <footer>
-    <div class="footer-icons-container">
-     {{--  <ul>
+{{--     <div class="footer-icons-container">
+     <ul>
         <li class="footer-icons" v-for="(icon, i) in footerIcons" :key="i">
           <a :href="icon.href">
             <img class="icon-img" :src="icon.img" :alt="icon.alt" />
             <div class="icon-text">{{ icon.text }}</div>
           </a>
         </li>
-      </ul> --}}
-    </div>
+      </ul>
+    </div> --}}
 
     <div class="footer-list-container">
       <div class="link-container">

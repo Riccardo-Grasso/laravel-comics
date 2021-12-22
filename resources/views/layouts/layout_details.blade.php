@@ -18,6 +18,6 @@
         @yield('content')
     </main>
 
-    @include("partials.footer_details")
+    @include("partials.the_footer")
 </body>
 </html>
