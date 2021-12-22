@@ -13,7 +13,7 @@
 
     <div class="container bg-white">
         <div class="row py-5">
-            <div class="col-8">
+            <div class="col-8 pe-5">
                 <h1 >{{ $comic["title"]}}</h1>
                 <div class="price my-4 bg-success p-2 text-white"> U.S. Price {{ $comic["price"]}}</div>
                 <p>{{ $comic["description"]}}</p>
