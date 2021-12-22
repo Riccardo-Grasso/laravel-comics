@@ -81,8 +81,8 @@ main {
 
     .bg-white {background-color: white;}
 
-    .bg-grey{background-color: #f6f6f6;}
-    
+    .bg-grey {background-color: #f6f6f6;}
+     
      .detail-comic-img-container {
         position: relative;
         background-color: $dc-blue;
@@ -92,5 +92,14 @@ main {
             position: absolute;
             bottom: 20px;
         }
-    }  
+
+
+    }
+    .comic-data-container { 
+        .authors {
+        a {
+            text-decoration: none;
+        }
+        }   
+    }
 }

@@ -29,8 +29,8 @@
     </div>
     <div class="bg-grey">
         <div class="container py-5">
-            <div class="row">
-                <div class="col-6 pe-3">
+            <div class="row comic-data-container">
+                <div class="col-6 pe-3 authors">
                     <h3>Talent</h3>
                     <hr>
                     <div class="row">
@@ -39,7 +39,7 @@
                         </div>
                         <div class="col-8">
                             @foreach ($comic["artists"] as $artist)
-                            <a href="#">{{$artist}}</a>   
+                            <a href="#">{{$artist}}</a>,   
                             @endforeach
                             
                         </div>
@@ -52,7 +52,7 @@
                         </div>
                         <div class="col-8">
                             @foreach ($comic["writers"] as $writer)
-                            <a href="#">{{$writer}}</a> 
+                            <a href="#">{{$writer}}</a>,
                             @endforeach
                         </div>
                     </div>
