@@ -1,3 +1,41 @@
+@php
+  $footer_links = [
+    "top" => [
+        "Characters",
+        "Comics",
+        "Movies",
+        "TV",
+        "Games",
+        "Videos",
+        "News",
+      ],
+    "bottom" => [
+      "Shop DC",
+      "Shop DC Collectibles",
+    ],
+    "central" => [
+      "Terms Of Use",
+      "Privacy policy (New)",
+      "Ad Choices",
+      "Advertising",
+      "Jobs",
+      "Subscriptions",
+      "Talent Workshops",
+      "CPSC Certificates",
+      "Ratings",
+      "Shop Help",
+      "Contact Us",
+    ],
+    "right" => [
+      "DC",
+      "MAD Magazine",
+      "DC Kids",
+      "DC Universe",
+      "DC Power Visa",
+    ]
+  ];
+@endphp
+
 <footer>
    {{--  <div class="footer-icons-container">
       <ul>
@@ -11,46 +49,54 @@
     </div> --}}
 
     <div class="footer-list-container">
-      <div class="link-container">
-        <div class="col-1">
-          <div class="col-top">
-            <div class="title">DC COMICS</div>
-            {{-- <ul>
-              <li class="links" v-for="(element, i) in linkTop" :key="i">
-                <a :href="element.href">{{ element.link }}</a>
-              </li>
-            </ul> --}}
+        <div class="link-container">
+          <div class="col-1">
+            <div class="col-top">
+              <div class="title">DC COMICS</div>
+              <ul class="ps-0">
+                @foreach ($footer_links["top"] as $link)
+                  <li class="links">
+                      <a href="#">{{ $link}}</a>
+                  </li>
+                @endforeach              
+              </ul>
+            </div>
+            <div class="col-bottom">
+              <div class="title">SHOP</div>
+               <ul class="ps-0">
+                @foreach ($footer_links["bottom"] as $link)
+                <li class="links">
+                    <a href="#">{{ $link}}</a>
+                </li>
+              @endforeach 
+              </ul> 
+            </div>
           </div>
-          <div class="col-bottom">
-            <div class="title">SHOP</div>
-            {{-- <ul>
-              <li class="links" v-for="(element, i) in linkBottom" :key="i">
-                <a :href="element.href">{{ element.link }}</a>
+          <div class="col-2">
+            <div class="title">DC</div>
+            <ul class="ps-0">
+              @foreach ($footer_links["central"] as $link)
+              <li class="links">
+                  <a href="#">{{ $link}}</a>
               </li>
-            </ul> --}}
+            @endforeach 
+            </ul>
+          </div>
+          <div class="col-3">
+            <div class="title">SITES</div>
+            <ul class="ps-0">
+              @foreach ($footer_links["right"] as $link)
+              <li class="links">
+                  <a href="#">{{ $link}}</a>
+              </li>
+            @endforeach 
+            </ul>
           </div>
         </div>
-        <div class="col-2">
-          <div class="title">DC</div>
-          {{-- <ul>
-            <li class="links" v-for="(element, i) in linkCentral" :key="i">
-              <a :href="element.href">{{ element.link }}</a>
-            </li>
-          </ul> --}}
-        </div>
-        <div class="col-3">
-          <div class="title">SITES</div>
-          {{-- <ul>
-            <li class="links" v-for="(element, i) in linkRight" :key="i">
-              <a :href="element.href">{{ element.link }}</a>
-            </li>
-          </ul> --}}
+        <div class="image-container">
+          <img src= {{asset("img/dc-logo-bg.png")}} alt="DC_Logo" />
         </div>
       </div>
-      <div class="image-container">
-        <img src= {{asset("img/dc-logo-bg.png")}} alt="DC_Logo" />
-      </div>
-    </div>
 
     <div class="social">
       <div class="sign-up-button">

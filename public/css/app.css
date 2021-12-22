@@ -208,7 +208,7 @@ footer ul a .icon-text {
 
 footer .footer-list-container {
   background-image: url("/img/footer-bg.jpg");
-  height: 360px;
+  /* height: $section-height*3; */
   padding: 20px 15%;
   display: flex;
   overflow: hidden;
