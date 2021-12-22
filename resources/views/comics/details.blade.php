@@ -3,23 +3,34 @@
 @section('page-title', 'DC Comics - ' . $comic["title"])
 
 @section('content')
+    <div class="comic-container">
+        <div class="detail-comic-img-container">
+            <div class="container">
+            <img class="detail-comic-img" src="{{ $comic["thumb"]}}" alt="comic-image" />
+        </div>
+        </div>
+    </div>
+
     <div class="container bg-white">
         <div class="row py-5">
-            <div class="col-9">
+            <div class="col-8">
                 <h1 >{{ $comic["title"]}}</h1>
                 <div class="price my-4 bg-success p-2 text-white"> U.S. Price {{ $comic["price"]}}</div>
                 <p>{{ $comic["description"]}}</p>
             </div>
-            <div class="col-3">
-                <h6 class="text-end pe-1">ADVERTISEMENT</h6>
-                <img src="{{asset('img/picture.jpg')}}" alt="poster">
+            <div class="col-4">
+                <h6 class="text-end">ADVERTISEMENT</h6>
+                <a href="#">
+                    <img class="w-100" src="{{asset('img/picture.jpg')}}" alt="poster">
+                </a>
+                
             </div>
         </div>
     </div>
     <div class="bg-grey">
         <div class="container py-5">
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 pe-3">
                     <h3>Talent</h3>
                     <hr>
                     <div class="row">
@@ -47,7 +58,7 @@
                     </div>
                     <hr>
                 </div>
-                <div class="col-6">
+                <div class="col-6 ps-3">
                     <h3>Specs</h3>
                     <hr>
 

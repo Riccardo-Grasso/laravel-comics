@@ -151,6 +151,17 @@ main .bg-grey {
   background-color: #f6f6f6;
 }
 
+main .detail-comic-img-container {
+  position: relative;
+  background-color: #3c7bf8;
+  height: 72px;
+}
+
+main .detail-comic-img-container .detail-comic-img {
+  position: absolute;
+  bottom: 20px;
+}
+
 footer .footer-icons-container {
   background-color: #3c7bf8;
   height: 156px;

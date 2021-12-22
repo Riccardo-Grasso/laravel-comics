@@ -83,4 +83,14 @@ main {
 
     .bg-grey{background-color: #f6f6f6;}
     
+     .detail-comic-img-container {
+        position: relative;
+        background-color: $dc-blue;
+        height: $section-height * 0.6;
+
+        .detail-comic-img {
+            position: absolute;
+            bottom: 20px;
+        }
+    }  
 }
