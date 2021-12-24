@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view("home.index");
-})->name("home.index");
+Route::get('/', 'HomeController@index')->name("home.index");
 
 Route::get('/characters', function () {
     return view("characters.index");
